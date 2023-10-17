@@ -35,7 +35,6 @@ export default function Home() {
   }
   return (
     <Fragment>
-
       <div className="menu-lateral">
         <div className="divisao-menu">
           <div className="logo"></div>
