@@ -24,4 +24,29 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+button{
+  border: 1px solid #595FE4;
+  border-radius: 6px;
+  color: #595FE4;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+button:hover{
+  background-color: #595FE4;
+  color: white;
 }

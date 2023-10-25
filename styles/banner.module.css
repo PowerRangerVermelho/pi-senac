@@ -1,0 +1,43 @@
+
+.img-fundo img{
+    width: 100em;
+    height: 350px;
+}
+
+.bloco-imagem{
+    position: absolute;
+    width: 20em;
+    height: 350px;
+    right: 0;
+    top: 0;
+    background-color: #2E2F47;
+    color: white;
+    padding: 10px;
+}
+
+.frase{
+    margin: 10px 0px;
+}
+
+.frase > span::before {
+    content: "Saúde não é luxo, é investimento.";
+    animation: animate infinite 10s;
+    }
+
+    @keyframes animate {
+
+    0% {
+        content: "Saúde não é luxo, é investimento.";
+    }
+
+    50% {
+        content: "Cuidar da saúde significa qualidade de vida.";
+    }
+
+    75% {
+        content: "Não conte com a sorte, conte com um bom plano!";
+    }
+    100% {
+        content: "Saúde não é luxo, é investimento.";
+    }
+    }
