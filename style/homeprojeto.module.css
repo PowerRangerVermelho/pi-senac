@@ -1,0 +1,54 @@
+
+
+
+
+    .home-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .home-container a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .home-container button {
+        margin-top: 20px;
+        background-color: var(--button-background);
+        color: var(--button-text-color);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        text-align: left;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .home-container button:hover {
+        background-color: var(--button-hover);
+        color: #fff;
+    }
+
+    .home-container button:active {
+        background-color: var(--button-hover);
+        color: #fff;
+    }
+
+    .home-container button.exit-button {
+        background-color: var(--exit-button-background);
+        color: var(--exit-button-text);
+    }
+
+    .home2 {
+        color: var(--primary-color);
+    }
+
+    .home-container a, .home-container button {
+        color: var(--primary-color);
+    }

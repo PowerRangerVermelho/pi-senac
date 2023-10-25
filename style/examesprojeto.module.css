@@ -1,0 +1,44 @@
+
+.exams-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.exams-container label {
+  display: block;
+  margin-top: 10px;
+}
+.exams-container input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.exams-container select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.exams-container .button-container {
+  display: flex;
+  justify-content: center; /* Align buttons in the middle */
+  align-items: center;
+  margin-top: 20px;
+}
+.exams-container button {
+  margin: 10px; /* Add space between buttons */
+  background-color: #F7941D;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.exams-container button[type="submit"] {
+  background-color: #004A8D;
+}
