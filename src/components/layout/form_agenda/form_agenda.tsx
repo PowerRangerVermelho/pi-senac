@@ -36,10 +36,11 @@ export const FormAgenda = () => {
                     </select>
                 </div>
 
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <button style={{ width: '20%' }}>Agendar</button>
-                </div>
+                
             </form>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <button style={{ width: '20%' }}>Agendar</button>
+            </div>
         </div>
     )
 }

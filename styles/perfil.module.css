@@ -1,0 +1,50 @@
+.bloco{
+    height: 100vh;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgb(62, 58, 103);
+    padding: 0.5em;
+    padding-bottom: 5rem;
+}
+
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 22em;
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    position: absolute;
+}
+
+.picture:hover {
+    color: #777;
+    background: #ccc;
+}
+
+.picture:active {
+    border-color: #595FE4;
+    color: #595FE4;
+    background: #eee;
+}
+
+.picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+    max-width: 100%;
+}

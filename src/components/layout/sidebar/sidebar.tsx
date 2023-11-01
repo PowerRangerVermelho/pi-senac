@@ -7,6 +7,7 @@ import { HomeIcon } from "../icons/home-icon/home-icon";
 import { AgendaIcon } from "../icons/agenda-icon/agenda-icon";
 import { HistIcon } from "../icons/hist-icon/hist-icon";
 import { PerfilIcon } from "../icons/perfil-icon/perfil-icon";
+import { FichaIcon } from "../icons/ficha-icon/ficha-icon";
 const SideBar = () => {
   return (
     <div className={styles['menu-lateral']}>
@@ -29,6 +30,9 @@ const SideBar = () => {
 
           <li className='p-2'>
             <Link href="/perfil"><PerfilIcon />Perfil</Link>
+          </li>
+          <li className='p-2'>
+            <Link href="/ficha"><FichaIcon />Ficha Anamnese</Link>
           </li>
         </ul>
       </div>
