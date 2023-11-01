@@ -35,8 +35,8 @@ export default function Home() {
   }
   return (
     <Fragment>
-
-      <div className="menu-lateral">
+      <div className='bg-orange-500 w-auto h-auto text-black'><p>Estou aqui</p></div>
+      {/* <div className="menu-lateral">
         <div className="divisao-menu">
           <div className="logo"></div>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
 
       <div className='whatsapp'>
           <Link className="whatsapp-link" href="https://web.whatsapp.com/send?phone=5567999774271" target="_blank">SAC</Link>
-      </div>
+      </div> */}
     </Fragment>
   )
 }

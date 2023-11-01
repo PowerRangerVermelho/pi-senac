@@ -31,6 +31,13 @@ section{
     background-repeat: no-repeat;
 }
 
+.logo{
+    background-image: url(https://vestibular.sc.senac.br/img/brand/logo-ext-white.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
 .inputs ul li a {
     text-decoration: none;
     color: #fff;
@@ -82,10 +89,10 @@ section{
     font-size: 20px;
 }
 
-span::before {
+/* span::before {
 content: "Saúde não é luxo, é investimento.";
 animation: animate infinite 10s;
-}
+} */
 
 @keyframes animate {
 
