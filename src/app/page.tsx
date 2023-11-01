@@ -12,9 +12,9 @@ import Button from '@/componentes/button';
 import CardLogin from '@/componentes/card-login';
 import CardHome from '@/componentes/card-home';
 import CardExames from '@/componentes/card-exames';
-import CardFichaAnamneseProjeto from '@/componentes/card-ficha_anamnese_projeto';
+import CardFichaAnamneseProjeto from '@/componentes/card-ficha-anamnese-projeto';
 import CardCadastro from '@/componentes/card-cadastro';
-import CardProfissionalProjeto from '@/componentes/card-profissional_projeto';
+import CardProfissionalProjeto from '@/componentes/card-profissional-projeto';
 
 function Home() {
 

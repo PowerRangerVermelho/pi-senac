@@ -1,8 +1,9 @@
 import Link from "next/link";
+import styles from '@/style/cadastroprofissionalprojeto.module.css'
 
 export default function CardProfissionalProjeto () {
     return (
-        <div className="cadastro-container">
+        <div className={styles.cadastroContainer}>
         <h2>Cadastro do Profissional</h2>
         <form action="#" method="post">
             <label>Nome Completo:</label>
@@ -38,7 +39,7 @@ export default function CardProfissionalProjeto () {
             
             <div className="button-container">
                 <Link href="login_projeto.html"><button type="button">Cadastrar Profissional</button></Link>
-                <Link href="login_projeto.html"><button type="button">Voltar </button></Link>
+                <Link href="login_projeto.html"><button type="button">Voltar para a tela home </button></Link>
             </div>
         </form>
     </div>

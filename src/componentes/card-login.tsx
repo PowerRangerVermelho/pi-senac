@@ -1,10 +1,11 @@
 import Link from "next/link";
+import styles from '@/style/loginprojeto.module.css'; 
 
 export default function CardLogin () {
     return (
         
 
-    <div className="login-container">
+    <div className={styles.loginContainer}>
     <i className="fa-solid fa-user"></i>
     <form action="#" method="post">
         <label>Username:</label>
@@ -13,7 +14,7 @@ export default function CardLogin () {
         <label>Password:</label>
         <input type="password" id="password" name="password" required />
         <br />
-        <Link href="home_projeto.html"><button type="button">Home</button></Link>
+        <Link href="home_projeto.html"><button type="button">Entrar</button></Link>
         <Link href="cadastro__profissional_projeto.html"><button type="button">Cadastro Profissional</button></Link>
     </form>
     </div>
