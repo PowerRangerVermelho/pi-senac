@@ -32,7 +32,7 @@ const SideBar = () => {
             <Link href="/perfil"><PerfilIcon />Perfil</Link>
           </li>
           <li className='p-2'>
-            <Link href="/ficha"><FichaIcon />Ficha Anamnese</Link>
+            <Link href="/anamnese"><FichaIcon />Ficha Anamnese</Link>
           </li>
         </ul>
       </div>

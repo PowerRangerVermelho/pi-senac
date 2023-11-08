@@ -1,25 +1,13 @@
 'use client'
-import { Fragment } from 'react'
-import SideBar from '@/components/layout/sidebar/sidebar'
-import Banner from '@/components/layout/banner/banner'
-import { Card } from '@/components/layout/card/card'
-import { Whatsapp } from '@/components/layout/whatsapp/whatsapp'
 
+import { LoginBloco } from "@/components/layout/login/login"
+import Link from "next/link"
+import { Fragment } from "react"
 
-export default function Home() {
- 
-  return (
+export default function Login() {
+  return(
     <Fragment>
-      <div style={{display: 'flex'}}>
-        <div style={{width: '240px'}}>
-          <SideBar />
-        </div>
-        <div style={{width: 'calc(100% - 240px)'}}>
-          <Banner />
-          <Card />
-          <Whatsapp />
-        </div>
-      </div>
+      <LoginBloco />
     </Fragment>
   )
 }
