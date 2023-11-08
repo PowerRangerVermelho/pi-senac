@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import styles from '@/style/fichaanamneseprojeto.module.css';
 
 
 export default function CardFichaAnamneseProjeto() {

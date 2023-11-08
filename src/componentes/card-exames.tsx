@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import styles from '@/style/examesprojeto.module.css';
 
 export default function CardExames() {
     return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import styles from '@/style/cadastroprojeto.module.css'; 
 
 
 export default function CardCadastro() {
