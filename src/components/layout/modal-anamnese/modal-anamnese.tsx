@@ -1,9 +1,9 @@
-import styles from '@/styles/anamnese.module.css'
+import styles from '@/styles/anamnese-modal.module.css'
 import { FichaIcon } from '../icons/ficha-icon/ficha-icon'
 
-export const BlocoAnamnese = () => {
+export const ModalAnamnese = () => {
     return (
-        <div className={styles['bloco-anamnese']}>
+        <div>
             <div className={styles["bloco-form"]}>
                 <form action="" className={styles['form']}>
                     <div className={styles.titulo} style={{ display: 'flex', alignItems: 'center', padding: '10px' }}>
@@ -141,7 +141,7 @@ export const BlocoAnamnese = () => {
                 </form>
                 <div style={{display: 'flex', justifyContent: 'center', padding: '10px'}}>
                     <button style={{margin: '10px'}}>Enviar Ficha</button>
-                    <button style={{margin: '10px'}}>Cancelar Ficha</button>
+                    <button style={{margin: '10px'}}>Agendar Sem Ficha</button>
                 </div>
             </div>
         </div>

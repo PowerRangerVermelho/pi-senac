@@ -8,6 +8,7 @@ import { AgendaIcon } from "../icons/agenda-icon/agenda-icon";
 import { HistIcon } from "../icons/hist-icon/hist-icon";
 import { PerfilIcon } from "../icons/perfil-icon/perfil-icon";
 import { FichaIcon } from "../icons/ficha-icon/ficha-icon";
+import { CadPacienteIcon } from "../icons/cad-paciente-icon/cad-paciente";
 const SideBar = () => {
   return (
     <div className={styles['menu-lateral']}>
@@ -17,11 +18,15 @@ const SideBar = () => {
       <div className={styles.inputs}>
         <ul className='mt-5'>
           <li className='p-2'>
-            <Link className='' href="/"><HomeIcon />Início</Link>
+            <Link className='' href="/inicio"><HomeIcon />Início</Link>
           </li>
 
           <li className='p-2'>
             <Link href="/agendamento"><AgendaIcon />Agendamento</Link>
+          </li>
+
+          <li className='p-2'>
+            <Link href="/cadpaciente"><CadPacienteIcon />Cadastrar Paciente</Link>
           </li>
 
           <li className='p-2'>

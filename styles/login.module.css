@@ -34,8 +34,6 @@
     padding: 15px;
     font-size: 14px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
     border-radius: 6px;
     transition: all linear 160ms;
     outline: none;
@@ -51,14 +49,30 @@
     font-weight: 600;
 }
 
-.formLogin a {
+.esqueci{
     display: inline-block;
-    margin-bottom: 20px;
     font-size: 13px;
     color: #555;
     transition: all linear 160ms;
 }
 
-.formLogin a:hover {
+.esqueci:hover{
     color: #f72585;
+}
+
+.botao{
+    border: 1px solid #595FE4;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: 0.5s;
+    color: #595FE4;
+    padding: 10px;
+    width: 100%;
+}
+
+.botao:hover{
+    background-color: #595FE4;
+    color: #fff;
 }

@@ -1,4 +1,5 @@
 import styles from '@/styles/login.module.css'
+import Link from 'next/link'
 import { Fragment } from 'react'
 
 export const LoginBloco = () => {
@@ -16,11 +17,14 @@ export const LoginBloco = () => {
                         <input type="login" placeholder="Digite seu Login" />
                         <label htmlFor="password">Senha</label>
                         <input type="password" placeholder="Digite sua Senha" />
-                        <a href="/">Esqueci minha senha</a>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <button style={{width: '100%'}}>Acessar</button>
+
+                        <Link className={styles.esqueci} href="/">Esqueci minha senha</Link>
+
+                        <div style={{ display: 'flex', justifyContent: 'center' }}>
+                            <Link className={styles.botao} href="/inicio">Entrar</Link>
                         </div>
                     </form>
+
                 </div>
             </div>
 
