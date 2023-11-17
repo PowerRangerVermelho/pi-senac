@@ -1,6 +1,16 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import '../../styles/home.css'
+import Image from 'next/image'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDays, faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faBookMedical } from '@fortawesome/free-solid-svg-icons/faBookMedical'
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser'
+import Link from 'next/link'
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +25,53 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <div className='min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white'>
+      <div className='fixed w-full flex items-center justify-between h-14 text-white z-1'>
+        <div className='flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-blue-800 dark:bg-gray-800 border-none'>
+          <Image width={100} height={100} className='md:w-80 md:h-10 mr-2 rounded-md overflow-hidden' src='/logo-ext-white.png' alt='logo' />
+          {/* <div className='logo'></div> */}
+          {/* <span className="hidden md:block">ADMIN</span> */}
+        </div>
+        <div className='w-full flex justify-between items-center h-14 bg-blue-800 dark:bg-gray-800 header-right'>
+        </div>
+      </div>
+      <div className='fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-blue-900 dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar'>
+        <div className='overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow'>
+          <ul className='flex flex-col py-4 space-y-1'>
+            <li className='px-5 hidden md:block'>
+              <div className='content-around flex h-16 text-sm font-light tracking-wide text-white uppercase'>
+                <Link className='bg-transparent w-full content-around justify-center items-center flex border-2 border-red-500 rounded-xl' href={'#'} passHref>
+                  <FontAwesomeIcon className='px-4' icon={faHouse} style={{ color: 'white', fontSize: 16 }} /><p>Início</p>
+                </Link>
+              </div>
+            </li>
+            <li className='px-5 hidden md:block'>
+              <div className='content-around flex h-16 text-sm font-light tracking-wide text-white uppercase'>
+                <Link className='bg-transparent w-full content-around justify-center items-center flex border-2 border-red-500 rounded-xl' href={'#'} passHref>
+                  <FontAwesomeIcon className='px-4' icon={faCalendarDays} style={{ color: 'white', fontSize: 16 }} /><p>Agendamento</p>
+                </Link>
+              </div>
+            </li>
+            <li className='px-5 hidden md:block'>
+              <div className='content-around flex h-16 text-sm font-light tracking-wide text-white uppercase'>
+                <Link className='bg-transparent w-full content-around justify-center items-center flex border-2 border-red-500 rounded-xl' href={'#'} passHref>
+                  <FontAwesomeIcon className='px-4' icon={faBookMedical} style={{ color: 'white', fontSize: 16 }} /><p>histórico</p>
+                </Link>
+              </div>
+            </li>
+            <li className='px-5 hidden md:block'>
+              <div className='content-around flex h-16 text-sm font-light tracking-wide text-white uppercase'>
+                <Link className='bg-transparent w-full content-around justify-center items-center flex border-2 border-red-500 rounded-xl' href={'#'} passHref>
+                  <FontAwesomeIcon className='px-4' icon={faUser} style={{ color: 'white', fontSize: 16 }} /><p>Perfil</p>
+                </Link>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className='px-5 w-full'>
+      {children}
+      </div>
+    </div>
   )
 }
