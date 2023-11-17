@@ -1,0 +1,26 @@
+
+#linha{
+    margin-bottom: 10px;
+}
+
+.entrada{
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #dedfe3;
+    height: 40px;
+    padding: 10px;
+    color: #49494d;
+}
+
+.label-check{
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #dedfe3;
+    height: 40px;
+    padding: 10px;
+    color: #49494d;
+    width: '100%';
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
